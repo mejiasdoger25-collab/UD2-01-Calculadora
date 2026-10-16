@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PokemonList } from './component/pokemon-list/pokemon-list';
 
 @Component({
-  imports: [RouterOutlet],//NgbModule, cuando le meta bootstrap: ng add@ng-bootstrap/ng-bootstrap
+  imports: [RouterOutlet, NgbModule, PokemonList],//NgbModule, cuando le meta bootstrap: ng add@ng-bootstrap/ng-bootstrap
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

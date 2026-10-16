@@ -1,7 +1,15 @@
 <p>pokemon-list works!</p>
 
-<!-- llamadas a las invocaciones de cada item -->
+<!-- llamadas a las invocaciones de cada item 
+, falta estilo antiguo  
+-->
 
-@for (iten of pokemonList; track item.id){
-    <app-pokemon-list [pokemon]="item"></app-pokemon-list>
-}
+<div class="container-fluid mt-5">
+    <div class="row">
+        @for (item of pokemonList; track item.id) {
+        <div class="col-md-3 col-12">
+            <app-pokemon-item [pokemon]="item"></app-pokemon-item>
+        </div>
+        }
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokemonItem } from '../pokemon-item/pokemon-item';
 
 const POKEMON: Pokemon [] = [
   {
@@ -10,7 +11,7 @@ const POKEMON: Pokemon [] = [
 ]
 
 @Component({
-  imports: [],
+  imports: [PokemonItem],
   selector: 'app-pokemon-list',
   styleUrl: './pokemon-list.css',
   templateUrl: './pokemon-list.html',

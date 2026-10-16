@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   templateUrl: './pokemon-item.html',
 })
 export class PokemonItem {
-  pokemon = input<PokemonItem>();
+  pokemon = input<Pokemon>();
 }
