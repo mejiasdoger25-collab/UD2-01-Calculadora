@@ -1,0 +1,7 @@
+<p>pokemon-list works!</p>
+
+<!-- llamadas a las invocaciones de cada item -->
+
+@for (iten of pokemonList; track item.id){
+    <app-pokemon-list [pokemon]="item"></app-pokemon-list>
+}
